@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flating Animation</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="element_container" >
+        <div class="floating_element floating_element1" >
+        
+        </div>
+        <div class="floating_element floating_element2" >
+        
+        </div>
+        <div class="floating_element floating_element3" >
+        
+        </div>
+        <div class="floating_element floating_element4" >
+        
+        </div>
+        <div class="floating_element floating_element5" >
+        
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-git.js"></script>
+    <script src="waterFloat.js"></script>
+    <script>
+        $( document ).ready(function() {
+            waterFloat($(".floating_element1"),900,6,1)
+            waterFloat($(".floating_element2"),900,3,2)
+            waterFloat($(".floating_element3"),900,2,6)
+            waterFloat($(".floating_element4"),900,1,7)
+            waterFloat($(".floating_element5"),900,1,9)
+        });
+       
+    </script>
+</body>
+</html>
